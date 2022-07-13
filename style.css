@@ -22,10 +22,8 @@ main {
   height: 500px;
 }
 
-#names {
+#evaluation-form div {
   display: flex;
-}
-
-#input-name, #input-lastname {
   width: 50%;
 }
+
