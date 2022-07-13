@@ -4,4 +4,14 @@
   justify-content: space-evenly;
 }
 
+.trybewarts-header-logo {
+  order: 0;
+}
 
+.trybewarts-login {
+  order: 2;
+}
+
+#trybewarts-header-title {
+  order: 1;
+}
