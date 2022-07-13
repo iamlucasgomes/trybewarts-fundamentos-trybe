@@ -4,9 +4,9 @@ const send = document.getElementById('send');
 
 function verify() {
   if (email.value === 'tryber@teste.com' && password.value === '123456') {
-  alert('Olá, Tryber!');
+    alert('Olá, Tryber!');
   } else {
-  alert('Email ou senha inválidos.');
-} 
+    alert('Email ou senha inválidos.');
+  }
 }
 send.addEventListener('click', verify);
