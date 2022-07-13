@@ -9,9 +9,12 @@
 }
 
 .trybewarts-login {
+  display: flex;
   order: 2;
 }
 
 #trybewarts-header-title {
   order: 1;
 }
+
+
