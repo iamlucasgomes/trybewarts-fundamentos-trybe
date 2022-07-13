@@ -27,3 +27,7 @@ main {
   width: 50%;
 }
 
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
