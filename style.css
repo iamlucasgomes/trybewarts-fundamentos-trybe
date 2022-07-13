@@ -31,3 +31,7 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+#evaluation-form #check-agree {
+  display: flex;
+}
