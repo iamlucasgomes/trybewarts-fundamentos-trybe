@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>TrybeWarts</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header">
         <img src="images/trybewarts-header-logo.svg" alt="trybewarts header logo" class="trybewarts-header-logo">
@@ -23,7 +25,7 @@
                 <input type="text" name="input-name" id="input-name" placeholder="Nome">
                 <input type="text" name="input-lastname" id="input-lastname" placeholder="Sobrenome">
             </div>
-            <div >
+            <div>
                 <input type="email" name="input-email" id="input-email" placeholder="Email">
                 <select name="house" id="house">
                     <option value="Gitnória" id="gitnoria-house">Gitnória</option>
@@ -33,37 +35,48 @@
                 </select>
             </div>
             <label for="family" id="label-family">Qual sua família?</label>
-                <input type="radio" name="family" value="Frontend">Frontend
-                <input type="radio" name="family" value="Backend">Backend
-                <input type="radio" name="family" value="FullStack">FullStack
+            <input type="radio" name="family" value="Frontend">Frontend
+            <input type="radio" name="family" value="Backend">Backend
+            <input type="radio" name="family" value="FullStack">FullStack
             <label for="subject" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-                <input type="checkbox" class="subject" value="HoFs">Hofs
-                <input type="checkbox" class="subject" value="Jest">Jest
-                <input type="checkbox" class="subject" value="Promises">Promises
-                <input type="checkbox" class="subject" value="React">React
-                <input type="checkbox" class="subject" value="SQL">SQL
-                <input type="checkbox" class="subject" value="Python">Python
+            <input type="checkbox" name="subject" class="subject" value="HoFs">Hofs
+            <input type="checkbox" name="subject" class="subject" value="Jest">Jest
+            <input type="checkbox" name="subject" class="subject" value="Promises">Promises
+            <input type="checkbox" name="subject" class="subject" value="React">React
+            <input type="checkbox" name="subject" class="subject" value="SQL">SQL
+            <input type="checkbox" name="subject" class="subject" value="Python">Python
             <label for="rate" id="label-rate">Como você avalia a Trybewarts?</label>
-                <input type="radio" name="rate" value="1">1
-                <input type="radio" name="rate" value="2">2
-                <input type="radio" name="rate" value="3">3
-                <input type="radio" name="rate" value="4">4
-                <input type="radio" name="rate" value="5">5
-                <input type="radio" name="rate" value="6">6
-                <input type="radio" name="rate" value="7">7
-                <input type="radio" name="rate" value="8">8
-                <input type="radio" name="rate" value="9">9
-                <input type="radio" name="rate" value="10">10
+            <input type="radio" name="rate" value="1">1
+            <input type="radio" name="rate" value="2">2
+            <input type="radio" name="rate" value="3">3
+            <input type="radio" name="rate" value="4">4
+            <input type="radio" name="rate" value="5">5
+            <input type="radio" name="rate" value="6">6
+            <input type="radio" name="rate" value="7">7
+            <input type="radio" name="rate" value="8">8
+            <input type="radio" name="rate" value="9">9
+            <input type="radio" name="rate" value="10">10
             <label for="textarea" class="textarea">Deixe seu comentário:</label>
-                <textarea name="textarea" id="textarea" maxlength="500"></textarea>
-                <p id="counter" value="500">Você ainda pode escrever 500 caracteres</p>
-                <div id="check-agree"><input type="checkbox" name="checkbox" id="agreement"><label for="checkbox" id="label-infos">"Você concorda com o uso das informações acima?"</label></div>
+            <textarea name="textarea" id="textarea" maxlength="500"></textarea>
+            <p id="counter" value="500">Você ainda pode escrever 500 caracteres</p>
+            <div id="check-agree"><input type="checkbox" name="checkbox" id="agreement"><label for="checkbox"
+                    id="label-infos">"Você concorda com o uso das informações acima?"</label></div>
             <button type="submit" id="submit-btn" disabled>Enviar</button>
+        </form>
+        <form action="" id="form-data">
+            <p id="nome"></p>
+            <p id="mail"></p>
+            <p id="house-data"></p>
+            <p id="family"></p>
+            <p id="subject">Matérias: </p>
+            <p id="rate"></p>
+            <p id="comments"></p>
         </form>
         <img src="images/trybewarts-colored.svg" alt="trybewarts-forms-logo" id="trybewarts-forms-logo">
     </main>
     <footer>Direitos reservados à Trybewarts©</footer>
-    
+
     <script src="script.js"></script>
 </body>
+
 </html>

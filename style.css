@@ -36,3 +36,7 @@ main {
 #evaluation-form #check-agree {
   display: flex;
 }
+
+#form-data{
+  display: none;
+}
