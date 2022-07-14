@@ -41,7 +41,7 @@ function maxLengthText() {
 }
 
 function insertDataForm() {
-  const value = inputHouse.options[inputHouse.selectedIndex].value;
+  const { value } = inputHouse.options[inputHouse.selectedIndex];
   nome.innerText = `Nome: ${inputName.value} ${inputLastName.value}`;
   mail.innerText = `Email: ${inputEmail.value}`;
   house.innerText = `Casa: ${value}`;
