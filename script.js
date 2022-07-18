@@ -37,22 +37,28 @@ function checkAgree() {
 }
 function maxLengthText() {
   const lengthText = textArea.maxLength - textArea.textLength;
-  counter.innerHTML = `Você ainda pode escrever ${lengthText} caracteres`;
+  counter.innerHTML = `Você ainda pode digitar ${lengthText} caracteres`;
 }
 
 function insertDataForm() {
   const { value } = inputHouse.options[inputHouse.selectedIndex];
-  nome.innerText = `Nome: ${inputName.value} ${inputLastName.value}`;
-  mail.innerText = `Email: ${inputEmail.value}`;
-  house.innerText = `Casa: ${value}`;
-  family.innerText = `Família: ${evalForm.family.value}`;
+  nome.innerText = `Nome:
+  ${inputName.value} ${inputLastName.value}`;
+  mail.innerText = `Email:
+  ${inputEmail.value}`;
+  house.innerText = `Casa:
+  ${value}`;
+  family.innerText = `Família:
+  ${evalForm.family.value}`;
   for (let index = 0; index < inputSubject.length; index += 1) {
     if (inputSubject[index].checked) {
       subject.innerText += ` ${inputSubject[index].value},`;
     }
   }
-  rate.innerText = `Avaliação: ${evalForm.rate.value}`;
-  comment.innerText = `Observações: ${textArea.value}`;
+  rate.innerText = `Avaliação:
+  ${evalForm.rate.value}`;
+  comment.innerText = `Observações:
+  ${textArea.value}`;
 }
 
 function changeForm(e) {

@@ -1,31 +1,108 @@
-main {
-  display: flex;
+@font-face {
+  font-family: TongariRegular;
+  src: url('font/aa_tongari-03-regular-webfont.woff2');
 }
 
+.padding-top {
+  margin-top: 2%;
+}
+
+body {
+  font-family: TongariRegular , fantasy;
+}
+
+main {
+  margin-top: 8%;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 1;
+  height: 6%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  background-color: rgba(33, 33, 33);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-evenly;
+  color: white;
+  justify-content: space-between;
+  height: 16%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
 .trybewarts-login {
   display: flex;
+  align-items: center;
+  margin: 0 5%;
+}
+
+.trybewarts-header-logo {
+  width: 40%;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#inputs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 675px;
+}
+
+#input-name , #input-lastname , #input-email {
+  width: 47.2%;
+}
+
+#house {
+  width: 42.2%;
 }
 
 #evaluation-form {
   display: flex;
   flex-direction: column;
   width: 675px;
+  margin-left: 5%;
+  background-color: rgba(33, 33, 33, 0.288);
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-bottom: 0.2%;
+}
+
+#div-2 {
+  display: flex;
+}
+
+#div-family {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin-right: 10%;
+}
+
+#div-content {
+  flex-wrap: wrap;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
-}
-
-#evaluation-form div {
-  display: flex;
-  width: 50%;
 }
 
 #label-family {
@@ -37,6 +114,163 @@ main {
   display: flex;
 }
 
-#form-dat {
+#form-data {
   display: none;
+  flex-direction: column;
+  width: 40%;
+  background-color: rgba(33, 33, 33, 0.288);
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-bottom: 0.2%;
 }
+
+#forms-logo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.bg_video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: 20%;
+  height: auto;
+  z-index: -1000;
+  background: url('images/torre.jpg') no-repeat;
+  background-size: cover;
+}
+
+.input {
+  background-clip: padding-box;
+  background-color: rgb(236, 223, 203);
+  border: 1px solid rgb(236, 223, 203);
+  border-radius: 0.25rem;
+  margin: 0.5%;
+  color: black;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  height: calc(1.4em + 0.75rem + 2px);
+  line-height: 1.4;
+  transition: border-color 0.15s ease-in-out , box-shadow 0.15s ease-in-out;
+  font-family: TongariRegular , fantasy;
+}
+
+.input:focus {
+  color: black;
+  font-weight: 700;
+  background-color: rgb(236, 223, 203);
+  outline-color: rgb(236, 223, 203);
+  box-shadow: -3px -3px 15px rgb(236, 223, 203);
+  transition: 0.1s;
+  transition-property: box-shadow;
+  font-family: TongariRegular , fantasy;
+}
+
+#textarea {
+  height: 150px;
+  resize: none;
+}
+
+.input-login {
+  background-clip: padding-box;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 0.25rem;
+  margin: 0.5%;
+  color: black;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  height: calc(1.4em + 0.75rem + 2px);
+  line-height: 1.4;
+  transition: border-color 0.15s ease-in-out , box-shadow 0.15s ease-in-out;
+  font-family: TongariRegular , fantasy;
+}
+
+.input-login:focus {
+  color: black;
+  font-weight: 700;
+  background-color: white;
+  outline-color: white;
+  box-shadow: -3px -3px 15px white;
+  transition: 0.1s;
+  transition-property: box-shadow;
+  font-family: TongariRegular , fantasy;
+}
+
+/* From uiverse.io */
+button {
+  width: 170px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: rgb(33, 33, 33);
+}
+
+button , button span {
+  transition: 200ms;
+}
+
+button .text {
+  transform: translateX(35px);
+  color: white;
+  font-weight: 700;
+}
+
+button .icon {
+  position: absolute;
+  border-left: 1px solid black;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+button svg {
+  width: 15px;
+  fill: rgb(238, 238, 238);
+}
+
+button:hover {
+  background: rgb(33, 33, 33);
+}
+
+button:hover .text {
+  color: transparent;
+}
+
+button:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(0);
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active .icon svg {
+  transform: scale(0.8);
+}
+
+#submit-btn {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  width: 100%;
+  font-family: TongariRegular , fantasy;
+  background-color: rgb(236, 223, 203);
+}
+
