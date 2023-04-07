@@ -22,6 +22,10 @@
 - [@iamlucasgomes](https://www.github.com/iamlucasgomes)
 - [@antoniocunhadev](https://github.com/antoniocunhadev)
 
+## Deploy
+
+Você pode acessar a aplicação rodando clicando <strong><a href="https://iamlucasgomes.com/trybewarts-fundamentos-trybe/" target="_blank" rel="noopener noreferrer">aqui</a></strong>
+
 <div align="center">
   <br />
   <br />
